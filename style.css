@@ -1,91 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geo&family=Lexend:wght@100..900&display=swap');
 
-body{
-    background-color: #27272a;
+body {
+    background-color: #CCE0D8;
     margin: 0px;
 }
 
-h1, h2, h3, p{
-    margin: 0px;
+a {
+    text-decoration: none;
 }
 
-header{
-    background-color: rgb(68, 168, 255);
-    position: fixed;
+nav {
+    position: absolute;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    column-gap: 200px;
+    width: 80%;
+    top: 9%;
+    height: 6%;
+    left: 10%;
+    background-color: #80BDA0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+header {
+    background-color: #305E61;
+    position: absolute;
     padding: 0%;
     width: 100%;
-    height: 100px;
+    max-height: 12%;
+    height: 12%;
     margin: 0px;
     top: 0px;
-    text-align: center;
 }
 
-.base-logo{
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.telainicial{
+    background-color: white;
     position: fixed;
-    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navegacao {
+    color: #CFE8E1;
+    font-family: "Lexend", sans-serif;
+    font-weight: 900px;
+    font-size: 20px;
+}
+
+.botao{
+    color: #CFE8E1;
+    font-family: "Lexend", sans-serif;
+    font-weight: 900px;
+    font-size: 70px;
+}
+
+.bacteria{
+    background-color: white;
+    border: solid;
+    width: 25%;
+    border-color: black;
+    border-radius: 20%;
+    position: fixed;
+    left: 37.5%;
+    bottom: 40%;
+}
+
+.base-iniciar{
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+}
+
+.iniciar{
+    color: #000000;
+    font-family: "Lexend", sans-serif;
+    font-weight: 900px;
+    font-size: 40px;
+}
+
+.botaoinicio{
+    background-color: #305E61;
+    border: solid;
+    border-radius: 10%;
+    border-color: white;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    position: absolute;
+    left: 42.5%;
+    bottom: 10%;
+}
+
+.logos{
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    width: 10%;
+}
+
+.logos-inicio{
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    width: 13%;
+}
+
+
+.tema {
+    color: #CFE8E1;
+    display: inline;
+    font-family: "Lexend", sans-serif;
+    font-size: 47px;
+    width: 5%;
+    top: 8%;
+    left: 38%;
+    position: relative;
+}
+
+.tema-inicio {
+    color: #CFE8E1;
+    display: inline;
+    font-family: "Lexend", sans-serif;
+    font-size: 55px;
+    top: 18%;
+    left: 36%;
+    position: relative;
+}
+
+.base-logo {
+    position: absolute;
+    top: 0px;
     left: 30px;
 }
 
-.logo{
+.logo {
     font-family: "Geo", sans-serif;
-    position: fixed;
     font-size: 80px;
-    justify-self: flex-start;
     font-weight: 400;
     font-style: normal;
 }
 
-footer{
+.base-logo-inicio {
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 50px;
-    row-gap: 10px;
-    justify-content: center;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    bottom: 0px;
-    margin: 0px;
+    top: 10px;
+    left: 30px;
 }
 
-.home{
+
+.home {
     font-size: 30px;
     color: rgb(0, 0, 0);
     margin: 0px;
     padding: 10px;
-    transition: 1s;
+    transition: 2s;
 }
 
-.home:hover{
+.home:hover {
     font-size: 35px;
     cursor: pointer;
     border-bottom: solid;
     border-bottom-width: 3px;
 }
 
-.contatos{
+.contatos {
     width: 100%;
     font-size: 50px;
 }
 
-.fa-square-whatsapp{
-    color: #25d366;
-    font-size: 60px;
-}
 
-.fa-facebook{
-    color: #2f55a4;
-    font-size: 60px;
-}
-
-.fa-linkedin{
-    color: #0e76a8;
-    font-size: 60px;
+.sobre, .jogo, .creditos, .inicio {
+    color: #CFE8E1;
+    font-family: "Lexend", sans-serif;
+    font-weight: 900px;
+    border-bottom: solid black 3px;
+    font-size: 30px;
+    transition: 2s;
 }
