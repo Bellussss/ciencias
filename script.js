@@ -10,3 +10,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+
+function mostrarImagem(caminho) {
+    const img = document.getElementById('imagemSelecionada');
+    img.src = caminho;
+    img.style.display = 'block';
+}
+
+.botaoDev1.addEventListener('onclick')

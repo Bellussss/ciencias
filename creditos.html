@@ -2,11 +2,14 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Créditos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -15,12 +18,9 @@
             <h2 class="logo">Neurox</h2>
         </div>
         <h1 class="tema">Células bacterianas</h1>
-        <div class="sesi">
-        </div>
-        <div class="senai">
-        </div>
         <img class="logos" src="images/Sesisenai.png" alt="Logo sesi-senai.">
     </header>
+
     <nav>
         <a href="sobre.html" class="navegacao">Sobre</a>
         <a href="jogo.html" class="navegacao">Jogo</a>
@@ -28,8 +28,24 @@
     </nav>
 
     <main>
-        
+        <div><h2><strong>Desenvolvido por:</strong></h2></div>
+
+            <div class="desenvolvedor">
+                <button data-alvo="img1" class="botaoCredito">Bellucci</button>
+                <button data-alvo="img2" class="botaoCredito">Valerao</button>
+                <button data-alvo="img3" class="botaoCredito">Nocyam</button>
+                <button data-alvo="img4" class="botaoCredito">Casagrande</button>
+            </div>
+            <br>
+            <div class="imagens">
+                <img class="imagem" id="img1" src="Otavio.jpg" alt="Imagem DEVs">
+                <img class="imagem" id="img2" src="Valero.jpg" alt="Imagem DEVs">
+                <img class="imagem" id="img3" src="Maycon.jpg" alt="Imagem DEVs">
+                <img class="imagem" id="img4" src="Casagrande.jpg" alt="Imagem DEVs">
+            </div>
     </main>
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
