@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geo&family=Lexend:wght@100..900&display=swap');
 
+@media (max-width: 768px) {
+
+    /*Não apaga essa parte, ela ajusta para telas menores*/
+    .todas_cartas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 body {
     background-color: #CCE0D8;
     margin: 0px;
@@ -46,7 +55,7 @@ header {
     font-style: normal;
 }
 
-.telainicial{
+.telainicial {
     background-color: white;
     position: fixed;
     display: flex;
@@ -62,14 +71,14 @@ header {
     font-size: 20px;
 }
 
-.botao{
+.botao {
     color: #CFE8E1;
     font-family: "Lexend", sans-serif;
     font-weight: 900px;
     font-size: 70px;
 }
 
-.bacteria{
+.bacteria {
     background-color: white;
     border: solid;
     width: 25%;
@@ -80,20 +89,20 @@ header {
     bottom: 40%;
 }
 
-.base-iniciar{
+.base-iniciar {
     position: absolute;
     bottom: 30%;
     left: 30%;
 }
 
-.iniciar{
+.iniciar {
     color: #000000;
     font-family: "Lexend", sans-serif;
     font-weight: 900px;
     font-size: 40px;
 }
 
-.botaoinicio{
+.botaoinicio {
     background-color: #305E61;
     border: solid;
     border-radius: 10%;
@@ -108,14 +117,14 @@ header {
     bottom: 10%;
 }
 
-.logos{
+.logos {
     position: absolute;
     top: 25%;
     right: 2%;
     width: 10%;
 }
 
-.logos-inicio{
+.logos-inicio {
     position: absolute;
     top: 35%;
     right: 2%;
@@ -185,7 +194,10 @@ header {
 }
 
 
-.sobre, .jogo, .creditos, .inicio {
+.sobre,
+.jogo,
+.creditos,
+.inicio {
     color: #CFE8E1;
     font-family: "Lexend", sans-serif;
     font-weight: 900px;
@@ -193,23 +205,36 @@ header {
     font-size: 30px;
     transition: 2s;
 }
+
 main {
+    margin-top: 9%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin: 10px;
-    border-radius: 10px;
+    align-items: center;
 }
+
+.todas_cartas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 .card {
     margin: 0px;
     width: 300px;
     height: 350px;
     perspective: 1000px;
+    position: relative;
 }
 
 .face {
-    width: 250px; 
+    width: 250px;
     height: 350px;
     transition: 0.7s;
     transform-style: preserve-3d;
@@ -219,12 +244,13 @@ main {
     transform: rotateY(-180deg);
 }
 
-.front, .back {
+.front,
+.back {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    backface-visibility: hidden; 
+    backface-visibility: hidden;
 }
 
 .front {
@@ -233,7 +259,6 @@ main {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     border: 3px solid;
     border-color: #f1edca;
     border-radius: 20px;
@@ -249,9 +274,44 @@ main {
     border: 5px solid;
     border-color: #f1edca;
 }
-.img-card{
-width: 250px;
-height: 350px;
-border-color: black 2px;
-border-radius: 20px;
+
+.img-card {
+    width: 250px;
+    height: 350px;
+    border-color: black 2px;
+    border-radius: 20px;
+}
+
+.explicacao {
+    display: flex;
+    justify-content: center;
+    background-color: #9ebfaf;
+    border: solid;
+    border-color: #305E61 10px;
+    align-items: flex-start;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    margin-top: 10%;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.conteudo {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.conteudo h1 {
+    font-size: 57px;
+    margin: 0;
+    text-align: center;
+}
+
+.conteudo p {
+    margin-top: 1em;
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: justify;
 }
